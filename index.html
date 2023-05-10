@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Template</title>
+    <link rel="stylesheet" href="WebsiteTemplate.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="nav">
+      <div class="nav-logo">
+        <div>
+          <h1 class="set-text-color">Collab</h1>
+        </div>
+        <nav id="nav">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Contact</li>
+            <li>About</li>
+          </ul>
+        </nav>
+      </div>
+      <i class="fa fa-bars" onclick="openMenu()"></i>
+      <div class="btn-start">
+        <button>Get Started</button>
+      </div>
+    </section>
+    <section class="main">
+      <div class="content">
+        <h2>Collaborate Like</h2>
+        <h2>Never Before</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem,
+          culpa.
+        </p>
+        <button>Discover Video</button>
+      </div>
+      <div>
+        <img src="image-removebg-preview (2).png" />
+      </div>
+    </section>
+    <section class="footer">
+      <img src="instagram.gif" />
+      <img src="twitter.png" />
+      <img src="youtube.png" />
+    </section>
+    <script>
+      var nav = document.getElementById("nav");
+      const openMenu = () => {
+        if (nav.classList.contains("addMenuIcon"))
+          nav.classList.remove("addMenuIcon");
+        else nav.classList.add("addMenuIcon");
+      };
+    </script>
+  </body>
+</html>
