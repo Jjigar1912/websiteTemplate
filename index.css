@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins:wght@300&family=Roboto&display=swap');
+*{
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+.btn-start i 
+{
+    display: none;
+}
+body
+{
+    font-family: 'Poppins', sans-serif;
+}
+.nav
+{
+    width : 80%;
+    padding : 30px;
+    margin : auto;
+    border: 5px solid #eb5757;
+}
+nav
+{
+    margin-left : 20px;
+}
+nav ul li
+{
+    list-style-type: none;
+    display: inline-block;
+    padding : 5px 20px;
+    font-size : 20px;
+}
+.addMenuIcon
+{
+    display: block;
+}
+nav ul li:hover
+{
+    color : grey;
+}
+.nav-logo
+{
+    width : 70%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav
+{
+    display: flex;
+    justify-content: space-between;
+}
+.set-text-color
+{
+    background : linear-gradient(to right,#913679 ,#c53385,#e7646c,#f18458,#f89d49);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-start button
+{
+    padding : 13px 40px;
+    border-radius: 20px;
+    color : white;
+    border : none ;
+    outline : none;
+    font-size: 20px;
+    background: linear-gradient(to right,#913679 ,#c53385,#e7646c,#f18458,#f89d49);
+}
+.footer
+{
+    width : 80%;
+    padding : 30px;
+    margin : auto;
+    border: 5px solid #eb5757;
+}
+.footer img 
+{
+    padding : 2px 10px;
+    margin-left : 40px;
+}
+.main
+{
+    border : 5px solid #eb5757;
+    width : 80%;
+    margin : auto;
+    min-height : 84vh;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.main div:first-child
+{
+    width : 50%;
+    margin-left : 45px;
+   
+}
+.main div 
+{
+    width : 40%;
+}
+.main img
+{
+    width : 100%;
+    margin-top : 40px;
+}
+.main div h2
+{
+    font-family: 'Roboto', sans-serif;
+
+}
+.content 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+.content h2
+{
+    font-size: 40px;
+}
+.content button
+{
+    width  : fit-content;
+    padding : 10px 20px;
+    background : linear-gradient(to right,#913679 ,#c53385,#e7646c,#f18458,#f89d49);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius : 10px;
+    border : 2px solid rgb(176, 176, 176);
+    transition: .2s;
+}
+.content button:hover
+{
+    border : 3px solid rgb(176,176,176);
+}
+.nav i {
+    display: none;
+}
+
+@media  screen and (max-width : 1260px) {
+    nav{
+        display: none;
+    }   
+    .nav-logo
+    {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .nav i 
+    {
+        display: block;
+        margin-left : -25px;
+        font-size: 30px;
+    }
+    .btn-start button{
+        margin-top : -5px;
+        padding : 13px 20px;
+    }
+    #nav ul li{
+        display: block;
+        width : 100%;
+        position: relative;
+        top : 40px;
+        left : 180px;
+        border-bottom: 2px solid cornsilk;
+        padding : 20px 0px;
+        width : 100%;
+        text-align: center;          
+        
+    }    
+}
+@media screen and (max-width : 790px) {
+    .btn-start button{
+        margin-right: -25px;                
+    }
+}
+@media screen and (max-width : 700px)
+{
+    .nav
+    {
+        width : 90%;
+    }
+    .main
+    {
+        flex-direction: column;
+        width : 90%;
+    }   
+    .main div:first-child
+    {
+        margin-left: 5px;
+        width : 100%;
+        padding : 10px;
+        margin-top : 20px;
+    }   
+    .footer
+    {
+        width : 90%;
+    }
+    
+    .content h2{
+        font-size: 30px;
+    }
+    .main div
+    {
+        width : 100%;
+    }
+    .main div img{
+        width : 70%;
+    }
+    
+    #nav ul li{
+        display: block;
+        width : 100%;
+        position: relative;
+        top : 40px;
+        left : 40px;
+        padding : 20px 0px;
+        width : 100%;
+        text-align: center;          
+        
+    }
+    .btn-start button{
+        margin-right : -18px;
+        padding : 13px 20px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width : 790px) {
+    .btn-start button{
+        margin-right: -25px;                
+    }
+    
+    .footer img{
+        margin-left : 20px;
+        padding : 5px 5px;
+    }   
+}
+
+@media screen and (max-width : 420px) {
+    .btn-start button{
+        margin-right: -20px;                
+        padding : 9px 10px;
+    }
+    #nav ul li{
+        display: block;
+        width : 100%;
+        position: relative;
+        top : 40px;
+        left : 0px;
+        padding : 20px 0px;
+        width : 100%;
+        text-align: center;          
+        
+    }
+    .footer img{
+        margin-left : 20px;
+        padding : 5px 5px;
+    }   
+ 
+}
+@media screen and (max-width : 375px) {
+    .footer img{
+        margin-left : 10px;
+        padding : 5px 5px;
+    }   
+    #nav ul li{
+        display: block;
+        width : 100%;
+        position: relative;
+        top : 40px;
+        left : 0px;
+        padding : 20px 0px;
+        width : 100%;
+        text-align: center;          
+        
+    }
+       
+    .footer{
+        width : 90%;
+    }
+}
